@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+        function loading() {
+      var x = document.getElementById("lds-grid");
+        x.style.display = "inline-block"}
+    </script>
+    <title>Glass Joe - DChew Kubernetes tester app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="banner" id="orch_banner">
+      <a href="/"><h1>Glass Joe App</h1></a>
+    </div>
+
+    <div class="container" id="main_container">
+
+      {% block content %}{% endblock %}
+    </div>
+
+    <div id="orch_footer">
+      <br>
+    </div>
+    <div id="knockout">
+        <img src="/static/images/joeko.gif" alt="Poor lil guy">
+    </div>
+  </body>
+</html>
